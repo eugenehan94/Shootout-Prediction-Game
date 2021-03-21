@@ -1,0 +1,29 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.goal-grid {
+  border: 1px solid black;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-square {
+  height: 200px;
+  width: 250px;
+  border: 1px solid rgb(196, 28, 28);
+}
+
+.gloves {
+  background-image: url("https://www.fancyglove.com/wp-content/uploads/Sportout-for-kids.jpg");
+  background-size: cover;
+}
+
+.soccer-ball {
+  background-image: url("https://s3.amazonaws.com/noupe/2011/06/001a1.jpg");
+  background-size: cover;
+}
