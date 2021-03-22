@@ -30,6 +30,9 @@ gridSquares.forEach((square) => {
   });
 });
 
+// This function determines if the users choice matches
+// the computer's choice or not, and increments the according
+// score for the scoreboard.
 function result(square, computerChoice) {
   if (square == computerChoice) {
     blockCount += 1;
@@ -53,6 +56,7 @@ function result(square, computerChoice) {
   }
 }
 
+// This function is to increment the score portion of the scoreboard
 function scoreboardGoals() {
   if (goalCount >= 100) {
     goalCount = 0;
@@ -70,6 +74,7 @@ function scoreboardGoals() {
   return;
 }
 
+//This function is to increment the block portion of the scoreboard
 function scoreboardBlocks() {
   if (blockCount >= 100) {
     blockCount = 0;
@@ -86,8 +91,10 @@ function scoreboardBlocks() {
 }
 
 // Javascript for Modal
-
+// Targeted the body to remove the scroll bar when the instructions are open;
+// the page behind the modal box would not be scrollable.
 const body = document.body;
+
 const open = document.querySelector("#open");
 const modal_container = document.querySelector(".modal-container");
 const close = document.querySelector("#close");
