@@ -11,7 +11,6 @@ let goals_tenth = document.querySelector("#goals-tenth");
 
 let goalCount = 0;
 let blockCount = 0;
-
 let computerChoice = 0;
 
 gridSquares.forEach((square) => {
@@ -85,3 +84,20 @@ function scoreboardBlocks() {
   }
   return;
 }
+
+// Javascript for Modal
+
+const body = document.body;
+const open = document.querySelector("#open");
+const modal_container = document.querySelector(".modal-container");
+const close = document.querySelector("#close");
+
+open.addEventListener("click", () => {
+  modal_container.classList.add("show");
+  body.classList.add("noScroll");
+});
+
+close.addEventListener("click", () => {
+  modal_container.classList.remove("show");
+  body.classList.remove("noScroll");
+});

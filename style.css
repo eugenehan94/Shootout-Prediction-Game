@@ -4,6 +4,9 @@ body {
   padding: 0;
   background-image: url("images/grassField.jpg");
 }
+.noScroll {
+  overflow: hidden;
+}
 
 .scoreboard {
   background-color: rgb(71, 70, 70);
@@ -28,6 +31,7 @@ body {
 .scoreboard-content {
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 .scoreboard-content-blocks h3,
 .scoreboard-content-goals h3 {
@@ -41,13 +45,76 @@ body {
   padding: 0;
 }
 
-#blocks-tenth,
-#blocks-single,
-#goals-tenth,
-#goals-single {
+#blocks,
+#goals {
   background-color: black;
+  width: 200px;
+  height: 100px;
+  overflow: hidden;
 }
 
+#open {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: black;
+  cursor: pointer;
+  font-size: 20px;
+}
+#open:hover {
+  color: #ffffff;
+  font-style: italic;
+  transition: color 0.5s ease;
+  text-decoration: underline;
+}
+/* Modal Section */
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.3);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+}
+
+.modal-container.show {
+  opacity: 1;
+  pointer-events: auto;
+  transition: opacity 0.5s ease;
+}
+.modal {
+  background-color: #ffffff;
+  width: 600px;
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 30px 50px;
+}
+
+#close {
+  background-color: rgb(37, 37, 37);
+  color: white;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 15px;
+  font-size: 18px;
+  padding: 5px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+#close:hover {
+  background-color: rgb(71, 70, 70);
+  transition: background-color 0.5s ease;
+}
+/* The Goal Section */
 .goal-grid {
   border-right: 20px solid rgba(70, 69, 69, 0.9);
   border-left: 20px solid rgba(70, 69, 69, 0.9);
