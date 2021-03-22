@@ -9,4 +9,5 @@ a pair of goalkeeper gloves and the computer's choice a soccer ball. If the user
 same quadrant this would be a block, else it would be considered a goal. The results would
 be reflected in the score board.
 
-![Game Screenshot]("https://github.com/eugenehan94/Shootout-Prediction-Game/blob/master/images/gameScreenShot.jpg")
+![GameScreenshot](https://github.com/eugenehan94/Shootout-Prediction-Game/blob/master/images/gameScreenShot.jpg)
+![screenShotTop](images/gameScreenShot.jpg)
