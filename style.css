@@ -2,28 +2,91 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  background-image: url("images/grassField.jpg");
+}
+
+.scoreboard {
+  background-color: rgb(71, 70, 70);
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.scoreboard-heading {
+  background-color: rgb(37, 37, 37);
+  text-align: center;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+}
+.scoreboard-heading h1 {
+  font-weight: lighter;
+  margin: 0;
+  padding: 5px;
+}
+.scoreboard-content {
+  display: flex;
+  justify-content: space-around;
+}
+.scoreboard-content-blocks h3,
+.scoreboard-content-goals h3 {
+  text-align: center;
+  color: rgb(209, 144, 22);
+  font-size: 80px;
+  margin-bottom: 20px;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+}
+
+#blocks-tenth,
+#blocks-single,
+#goals-tenth,
+#goals-single {
+  background-color: black;
 }
 
 .goal-grid {
-  border: 1px solid black;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
+  border-right: 20px solid rgba(70, 69, 69, 0.9);
+  border-left: 20px solid rgba(70, 69, 69, 0.9);
+  border-top: 20px solid rgba(70, 69, 69, 0.9);
+  background-image: url("images/soccerNetting.jpg");
+  background-size: cover;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  width: 70%;
+  margin: auto;
 }
 
 .grid-square {
-  height: 200px;
-  width: 250px;
-  border: 1px solid rgb(196, 28, 28);
+  height: 300px;
+  width: 30%;
+  display: inline-block;
+  border: 1px solid rgba(196, 28, 28, 0.4);
+  margin-bottom: 0;
 }
 
 .gloves {
-  background-image: url("https://www.fancyglove.com/wp-content/uploads/Sportout-for-kids.jpg");
+  background-image: url("images/GoalkeeperGloves.png");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .soccer-ball {
-  background-image: url("https://s3.amazonaws.com/noupe/2011/06/001a1.jpg");
+  background-image: url("images/SoccerBall.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background-size: cover; */
+}
+
+.blocked-shot {
+  background-image: url("images/BlockedShot.png");
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
 }

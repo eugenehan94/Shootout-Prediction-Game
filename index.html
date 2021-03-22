@@ -6,13 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Soccer Shoot-Out</title>
     <link rel="stylesheet" href="style.css">
-   
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
 </head>
 <body>
-    <h1>Soccer Shoot-Out Prediction Game</h1>
-
-    <h2>Your blocks: <span id="blocks">0</span></h2>
-   
+    <div class="scoreboard">
+        <div class="scoreboard-heading">
+    <h1>Soccer Shoot-Out Prediction Game Scoreboard</h1>
+        </div>
+        <div class="scoreboard-content">
+            <div class="scoreboard-content-blocks">
+            <h2>Your blocks</h2> 
+            <h3 id="blocks">
+                <span id = "blocks-tenth" style="font-family: 'Orbitron', sans-serif;">0</span>
+                <span id = "blocks-single" style="font-family: 'Orbitron', sans-serif;">0</span>
+            </h3>
+            </div>
+            
+            <div class="scoreboard-content-goals">
+            <h2>Goals</h2> 
+            <h3 id="goals">
+                <span id="goals-tenth" style="font-family: 'Orbitron', sans-serif;">0</span>
+                <span id ="goals-single" style="font-family: 'Orbitron', sans-serif;">0</span>
+            
+            </h3>
+            </div>
+        
+        </div>
+    </div>
 
     <div class="goal-grid">
 
@@ -22,9 +42,6 @@
         <div class="grid-square" id="4"></div>
         <div class="grid-square" id="5"></div>
         <div class="grid-square" id="6"></div>
-        <div class="grid-square" id="7"></div>
-        <div class="grid-square" id="8"></div>
-        <div class="grid-square" id="9"></div>
         
     </div>
 
