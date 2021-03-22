@@ -9,5 +9,5 @@ a pair of goalkeeper gloves and the computer's choice a soccer ball. If the user
 same quadrant this would be a block, else it would be considered a goal. The results would
 be reflected in the score board.
 
-##Screenshot of game
+## Screenshot of game
 ![Game Screenshot](images/gameScreenShot.jpg)
