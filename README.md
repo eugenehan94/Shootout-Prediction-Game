@@ -8,3 +8,5 @@ the computer would randomly choose a region as well. The players choice will be 
 a pair of goalkeeper gloves and the computer's choice a soccer ball. If the user selects the
 same quadrant this would be a block, else it would be considered a goal. The results would
 be reflected in the score board.
+
+![Game Screenshot]("images/gameScreenShot.jpg")
