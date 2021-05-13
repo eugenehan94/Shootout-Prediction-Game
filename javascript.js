@@ -43,7 +43,7 @@ function result(square, computerChoice) {
     console.log("blockCount: " + blockCount);
     setTimeout(() => {
       gridSquares[square - 1].classList.remove("blocked-shot");
-    }, 500);
+    }, 400);
   } else {
     console.log("Goal");
     goalCount += 1;
@@ -52,7 +52,7 @@ function result(square, computerChoice) {
     setTimeout(() => {
       gridSquares[square - 1].classList.remove("gloves");
       gridSquares[computerChoice - 1].classList.remove("soccer-ball");
-    }, 500);
+    }, 400);
   }
 }
 
