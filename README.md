@@ -1,5 +1,7 @@
 # Shootout-Prediction-Game
 
+## Link to game: https://eugenehan94.github.io/Shootout-Prediction-Game/
+
 A 2D soccer shootout game, where the use is the goalkeeper and the computer is the shooter.
 This game was created using HTML, CSS and vanilla Javascript.
 
